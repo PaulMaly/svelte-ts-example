@@ -1,0 +1,27 @@
+{
+  "name": "svelte-ts-example",
+  "version": "1.0.0",
+  "devDependencies": {
+    "colors": "^1.3.3",
+    "npm-run-all": "latest",
+    "rollup": "latest",
+    "rollup-plugin-commonjs": "latest",
+    "rollup-plugin-json": "^4.0.0",
+    "rollup-plugin-node-resolve": "latest",
+    "rollup-plugin-svelte": "latest",
+    "rollup-plugin-terser": "latest",
+    "rollup-plugin-typescript": "latest",
+    "sirv-cli": "latest",
+    "svelte": "beta",
+    "svelte-preprocess": "latest",
+    "tslib": "latest",
+    "typescript": "latest"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "autobuild": "rollup -c -w",
+    "dev": "run-p start:dev autobuild",
+    "start": "sirv public",
+    "start:dev": "sirv public --dev"
+  }
+}
